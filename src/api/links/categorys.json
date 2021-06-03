@@ -1,0 +1,12 @@
+[
+    { "id": 0, "name": "Environment Buttons", "sequence": 0, "color": "#FFFFFF" }
+    { "id": 1, "name": "Misc Buttons", "sequence": 0, "color": "#FFFFFF" }
+    { "id": 2, "name": "Dev Utilities", "sequence": 1, "color": "#FFFFFF" },
+    { "id": 3, "name": "UI Tools", "sequence": 2, "color": "#FFFFFF" },
+    { "id": 4, "name": "Misc Utilities", "sequence": 3, "color": "#FFFFFF" },
+    { "id": 5, "name": "Blogs", "sequence": 4, "color": "#FFFFFF" },
+    { "id": 6, "name": "DLLs (Dev Logging Links)", "sequence": 5, "color": "#FFFFFF" },
+    { "id": 7, "name": "Reference", "sequence": 6, "color": "#FFFFFF" },
+    { "id": 8, "name": "Hurricane Prep Linkz", "sequence": 7, "color": "#FFFFFF" },
+    { "id": 9, "name": "Fun Stuff", "sequence": 8, "color": "#FFFFFF" }
+]

@@ -2,10 +2,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { LinksPanelComponent } from './links-panel/links-panel.component';
+import { LinkComponent } from './shared/link/link.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LinksPanelComponent,
+    LinkComponent
   ],
   imports: [
     BrowserModule
@@ -13,4 +17,7 @@ import { AppComponent } from './app.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+
+export class AppModule {
+  
+}
