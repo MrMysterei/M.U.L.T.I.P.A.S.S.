@@ -46,7 +46,7 @@ export class AppComponent implements OnInit {
     { "id": 60, "categoryId": 8, "dateAdded": "2021-01-01" , "target": "_blank", "title": "XKCD", "url": "https://xkcd.com"},
     { "id": 61, "categoryId": 8, "dateAdded": "2021-01-01" , "target": "_blank", "title": "Order Of the Stick", "url": "http://www.giantitp.com/comics/oots.html"},
     { "id": 62, "categoryId": 8, "dateAdded": "2021-01-01" , "target": "_blank", "title": "SMBC : Saturday Morning Breakfast Cereal", "url": "https://www.smbc-comics.com"},
-    { "id": 63, "categoryId": 6, "dateAdded": "2021-01-01" , "target": "_blank", "title": "Online Pirate Translator", "url": "http://pirate.monkeyness.com/online_pirate_translator"},
+    { "id": 63, "categoryId": 8, "dateAdded": "2021-01-01" , "target": "_blank", "title": "Online Pirate Translator", "url": "http://pirate.monkeyness.com/online_pirate_translator"},
     { "id": 64, "categoryId": 7, "dateAdded": "2021-01-01" , "target": "_blank", "title": "Hacker News", "url": "https://news.ycombinator.com"},
     { "id": 65, "categoryId": 7, "dateAdded": "2021-01-01" , "target": "_blank", "title": "Weather Underground", "url": "https://www.wunderground.com"},
     { "id": 66, "categoryId": 7, "dateAdded": "2021-01-01" , "target": "_blank", "title": "Acko.net", "url": "http://acko.net"},
