@@ -10,7 +10,7 @@ import { Component, Input, OnInit } from '@angular/core';
 
 // Class Definition
 export class LinksPanelComponent implements OnInit {
-  panelTitle: string = 'Stuff';
+  panelTitle: string = 'TBD';
   panelTypeId: number = 4;
   panelWidth: number = 3;
   links: any[];
