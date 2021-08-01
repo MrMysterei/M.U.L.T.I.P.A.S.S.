@@ -12,7 +12,6 @@ import { Component, Input, OnInit } from '@angular/core';
 export class LinksPanelComponent implements OnInit {
   panelTitle: string = 'Stuff';
   panelTypeId: number = 4;
-  // today: Date = new Date();
   panelWidth: number = 3;
   links: any[];
 
