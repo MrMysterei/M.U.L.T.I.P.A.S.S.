@@ -1,27 +1,12 @@
-# Multipass
+# Project M.U.L.T.I.P.A.S.S.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.15.
+This is a simple SPA to be used as a personal links portal (as an analogous replacement for simply using browser-based links & folders).
 
-## Development server
+The intent of this project is to gain familiarity with the Angular framework & related technologies (Typescript, CSS/SCSS, etc).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# To-Dos (in no particular order):
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* Establish a cloud-based back-end data store for the links, their data & a simple user list (for access control & CRUD operations of categories, links and users).
+* Create a CRUD operations UI for managing categories, links and users.
+* Make the UI dynamic so that there can be different types of category representations (not just link panels).
+* Authentication/Authorization support.
