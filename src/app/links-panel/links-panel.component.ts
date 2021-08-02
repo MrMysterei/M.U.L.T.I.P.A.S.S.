@@ -1,5 +1,7 @@
 // Imports
 import { Component, Input, OnInit } from '@angular/core';
+import { Category } from '../Category';
+import { CATEGORIES } from '../mock-categories';
 
 // Component Decorator
 @Component({
@@ -14,6 +16,7 @@ export class LinksPanelComponent implements OnInit {
   panelTypeId: number = 4;
   panelWidth: number = 3;
   links: any[];
+  category: Category;
 
   @Input() filteredLinks: any[];
   @Input() PanelTitle: string;
@@ -23,7 +26,11 @@ export class LinksPanelComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.panelTitle = this.PanelTitle;
     this.links = this.filteredLinks;
+
+    let currentCategoryId = this.filteredLinks[0].categoryId;
+
+    this.category = CATEGORIES.find(x => x.id === currentCategoryId);
+    this.panelTitle = this.category.name;
   }
 }
