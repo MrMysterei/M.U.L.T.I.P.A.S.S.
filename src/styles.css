@@ -63,3 +63,10 @@ body {
     font-style: italic;
     color: red;
 }
+
+.count {
+    padding: 0 0 0 5px;
+    font-weight: 700;
+    font-style: italic;
+    color: black;
+}

@@ -1,25 +1,11 @@
 ﻿$(function () {
-    $(".panel-heading").children("strong").click(function () {
+    $(".panel_hdr").children("strong").click(function () {
         $(this).parent().next().toggle("blind");
     });
 
     $("a").click(function () {
         if ($(this).attr("href") != "#") {
             console.log("You clicked the '" + $(this).attr("title") + "' link...");
-
-            if ($(this).attr("class").indexOf("uses-prod-db") >= 0) {
-                if (!confirm("WARNING!!!\n\nThis will take to a system that uses the PRODUCTION DATABASE!\n\nMaking changes on accounts using this system will affect REAL accounts!\n\nDo you wish to proceed?")) {
-                    return false;
-                }
-                else {
-                    return true;
-                }
-            }
-        }
-        else if ($(this).attr("class").indexOf("ip_info") > 0) {
-            alert("JIRA: http://10.15.0.59\nConfluence: http://10.15.0.37\nM3Builds: http://10.15.0.38\nStaging: http://10.15.0.20");
-
-            return false;
         }
         else {
             return false;
@@ -30,35 +16,15 @@
         alert("This feature is not currently implemented...");
     });
 
-    $(".timesheet-link").click(function (e) {
-        var userName = prompt("What is your Jira username?", "");
-
-        if (userName == null || userName == "") {
-            userName = "Unknown";
-        }
-
-        $(this).attr("href", $(this).attr("href") + userName);
-    });
-
-    $(".shopify-cart-link").click(function (e) {
-        var checkoutId = prompt("What checkout ID do you want to use?", "Z2lkOi8vc2hvcGlmeS9DaGVja291dC85MjlmOGExZWJmYzlkMjAyYmNlZDk5ODFlOGJhZjU4Mj9rZXk9YjhiOWZmZWMxM2JjZjVjYzgzYjhjNzBmMjZjNDYzNzQ=");
-
-        if (checkoutId === null || checkoutId === "") {
-            checkoutId = "Z2lkOi8vc2hvcGlmeS9DaGVja291dC85MjlmOGExZWJmYzlkMjAyYmNlZDk5ODFlOGJhZjU4Mj9rZXk9YjhiOWZmZWMxM2JjZjVjYzgzYjhjNzBmMjZjNDYzNzQ=";
-        }
-
-        $(this).attr("href", $(this).attr("href") + checkoutId);
-
-        // alert($(this).attr("href"));
-    });
-
-    /*
     $(".count").each(function() {
-        // alert($(this).parent().parent().next().children("a.list-group-item").count);
-        // alert($(this).parent().next().children("list-group").children().attr("list-group-item"));
-        alert($(this).parent().next().children(".panel-body").children(".list-group").children(".list-group-item")); // .attr("list-group-item")
+        var qty = $(this).parent().next().children("app-link").children("ul").children("a.list-group-item").length;
+
+        if(qty === 0){
+            $(this).parent().attr("title", "No links found");
+        } else {
+            $(this).parent().attr("title", "(" + qty + (qty > 1 ?  " links found)" :  " link found)"));
+        }
     });
-    */
 
     $(".fancy_txt_area").click(function () {
         // $(".fancydlg").click(function() {
