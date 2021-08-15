@@ -19,10 +19,10 @@
     $(".count").each(function() {
         var qty = $(this).parent().next().children("app-link").children("ul").children("a.list-group-item").length;
 
-        if(qty === 0){
+        if(qty === 0) {
             $(this).parent().attr("title", "No links found");
         } else {
-            $(this).parent().attr("title", "(" + qty + (qty > 1 ?  " links found)" :  " link found)"));
+            $(this).parent().attr("title", "(" + qty + (qty > 1 ? " links found)" : " link found)"));
         }
     });
 
