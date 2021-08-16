@@ -1,4 +1,4 @@
-# Project PersonalLinksPortal
+# Project "Personal Links Portal"
 
 This is a simple SPA to be used as a personal links portal (as an analogous replacement for simply using browser-based links & folders).
 
