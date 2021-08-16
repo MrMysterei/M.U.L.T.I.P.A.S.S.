@@ -1,4 +1,4 @@
-# Project M.U.L.T.I.P.A.S.S.
+# Project PersonalLinksPortal
 
 This is a simple SPA to be used as a personal links portal (as an analogous replacement for simply using browser-based links & folders).
 
