@@ -12,6 +12,8 @@ export class AppComponent implements OnInit {
 
   links: Link[] = LINKS;
 
+  filter: string = '';
+
   category1List: any[];
   category2List: any[];
   category3List: any[];
@@ -22,6 +24,10 @@ export class AppComponent implements OnInit {
   category8List: any[];
 
   ngOnInit(): void {
+    this.bindLists();
+  }
+
+  bindLists() {
     this.category1List = this.GetLinksByCategory(this.links, 1);
     this.category2List = this.GetLinksByCategory(this.links, 2);
     this.category3List = this.GetLinksByCategory(this.links, 3);
@@ -33,7 +39,19 @@ export class AppComponent implements OnInit {
     this.category8List = this.GetLinksByCategory(this.links, 8);
   }
 
+  handleSearch(value: string) {
+    this.filter = value;
+
+    if(value !== '') {
+      console.log('Value: "' + value + '"');
+    }
+
+    this.bindLists();
+  }
+
   GetLinksByCategory(links, catId) {
-    return this.links.filter(x => x.categoryId === catId);
+    return this.filter.length > 0
+      ? this.links.filter(x => x.categoryId === catId && ((x.title.toLocaleLowerCase().indexOf(this.filter.toLocaleLowerCase()) >= 0) || (x.url.toLocaleLowerCase().indexOf(this.filter.toLocaleLowerCase()) >= 0)))
+      : this.links.filter(x => x.categoryId === catId);
   }
 }
