@@ -17,6 +17,7 @@ export class LinksPanelComponent implements OnInit {
   panelWidth: number = 3;
   links: any[];
   category: Category;
+  visible: boolean = true;
 
   @Input() filteredLinks: any[];
   @Input() PanelTitle: string;
@@ -28,9 +29,12 @@ export class LinksPanelComponent implements OnInit {
   ngOnInit(): void {
     this.links = this.filteredLinks;
 
-    let currentCategoryId = this.filteredLinks[0].categoryId;
+    if(this.links.length > 0){
+      let currentCategoryId = this.links[0].categoryId;
 
-    this.category = CATEGORIES.find(x => x.id === currentCategoryId);
-    this.panelTitle = this.category.name;
+      this.category = CATEGORIES.find(x => x.id === currentCategoryId);
+      
+      this.panelTitle = this.category.name;
+    }
   }
 }

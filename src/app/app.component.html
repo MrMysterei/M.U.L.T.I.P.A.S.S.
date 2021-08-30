@@ -5,14 +5,7 @@
   <div class="panel-body" style="background-color: silver;">
     <app-global-search (searchValue)="handleSearch($event)"></app-global-search>
     <div class="row">
-      <app-links-panel [filteredLinks]='category1List'></app-links-panel>
-      <app-links-panel [filteredLinks]='category2List'></app-links-panel>
-      <app-links-panel [filteredLinks]='category3List'></app-links-panel>
-      <app-links-panel [filteredLinks]='category4List'></app-links-panel>
-      <app-links-panel [filteredLinks]='category5List'></app-links-panel>
-      <app-links-panel [filteredLinks]='category6List'></app-links-panel>
-      <app-links-panel [filteredLinks]='category7List'></app-links-panel>
-      <app-links-panel [filteredLinks]='category8List'></app-links-panel>
+      <app-links-panel *ngFor="let category of categories" [filteredLinks]='GetLinksByCategory(category.id)'></app-links-panel>
     </div>
   </div>
   <div class="panel-footer">

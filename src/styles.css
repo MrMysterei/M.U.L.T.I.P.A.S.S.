@@ -48,7 +48,7 @@ body {
 }
 
 .list-group {
-    height: 193px !important;
+    /* height: 193px !important; */
     max-height: 193px !important;
     overflow-y: auto !important;
 }
